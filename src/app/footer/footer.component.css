@@ -1,0 +1,21 @@
+/* footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  } */
+
+  .footer{
+    background-color: #2f83dd;
+    padding: 8px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem !important;
+  }

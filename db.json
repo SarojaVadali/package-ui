@@ -1,0 +1,65 @@
+{
+  "packageList": [
+    {
+      "buyer1Name": "Saroja",
+      "buyer1Email": "Saroja@gmail.com",
+      "buyer2Name": "Vijay",
+      "buyer2Email": "Vijay@gmail.com",
+      "brokerName": "Prasad",
+      "brokerEmail": "Prasad@gmail.com",
+      "uploadedFiles": [
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        }
+      ],
+      "docCount": 5,
+      "createdOn": "12/24/2022 9:17:30",
+      "id": 7
+    },
+    {
+      "buyer1Name": "Saroja",
+      "buyer1Email": "Saroja2@gmail.com",
+      "buyer2Name": "Vijay",
+      "buyer2Email": "Vijaycris@gmail.com",
+      "brokerName": "prasad",
+      "brokerEmail": "s@s.com",
+      "uploadedFiles": [
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        },
+        {
+          "data": {}
+        }
+      ],
+      "docCount": 3,
+      "createdOn": "12/24/2022 3:09:17",
+      "fileAttr": "Upload Documents",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,72 @@
+<h1 mat-dialog-title>Add Package</h1>
+<div mat-dialog-content>
+<form [formGroup]="packageForm">
+    <!-- Buyer 1 Name,Email -->
+    <mat-form-field appearance="fill">
+        <mat-label>Buyer 1 Name</mat-label>
+        <input formControlName="Buyer1Name" matInput placeholder="Enter name here..">    
+        <mat-icon matSuffix>person_pin</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Buyer 1 Email Address</mat-label>
+        <input formControlName="Buyer1Email" matInput placeholder="Enter email here..">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+    
+<!-- Buyer 2 Name,Email -->
+    <mat-form-field appearance="fill">
+        <mat-label>Buyer 2 Name</mat-label>
+        <input formControlName="Buyer2Name" matInput placeholder="Enter name here..">
+        <mat-icon matSuffix>person_pin</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Buyer 2 Email Address</mat-label>
+        <input formControlName="Buyer2Email" matInput placeholder="Enter email here..">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+<!-- Broker Name,Email -->
+    <mat-form-field appearance="fill">
+        <mat-label>Broker Name</mat-label>
+        <input formControlName="BrokerName" matInput placeholder="Enter name here..">
+        <mat-icon matSuffix>person_pin</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Broker Email Address</mat-label>
+        <input formControlName="BrokerEmail" matInput placeholder="Enter email here..">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+<!-- Document to Upload -->
+<mat-form-field class="clsMatFormpload">
+    <div>
+    <!-- <mat-label>Upload Documents</mat-label> -->
+    <mat-toolbar>
+        <!-- Display files names -->
+        <input matInput formControlName="FileAttr" class="clsTbar" readonly name="name" />
+        <!-- Browse Button -->
+        <button mat-flat-button class="btnUpload">Browse File</button>
+      </mat-toolbar>
+    <input placeholder="Upload pdf docs here.." type="file" #fileInput id="uploadFile" 
+    (change)="SelectMultipleFiles($event)" name="uploadFile" multiple="multiple" accept="application/pdf, application/vnd.ms-excel"/>
+    <fieldset class="border-12 row mt-2">
+        <div class="col-md-10 clsDivUpload">
+            <table class="table table-sm table-bordered table-hover table-condensed ">
+                <tr class="customtblRow" *ngFor="let item of fileDataSource; let i=index;">
+                    <td>{{item.fileName}}</td>
+                    <td><a style="cursor: pointer;" (click)="deleteFile(i)" class="delete" ><i class="material-icons" data-toggle="tooltip" title="Delete" color="warn">close</i></a><span></span></td>
+                </tr>                    
+            </table>
+        </div>
+    </fieldset>   
+</div> 
+</mat-form-field>
+    
+</form>
+
+</div>
+
+<div mat-dialog-action [align]="'end'">
+<button mat-raised-button color="warn" mat-dialog-close>Close</button>
+<button class="ml-1" mat-raised-button color="primary" (click)="AddPackage()">{{actionBtn}}</button>
+</div>

@@ -1,0 +1,33 @@
+.add-new {
+    float: right;
+    height: 30px;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 12px;
+    line-height: 13px;
+}
+
+.add-new i {
+margin-right: 4px;
+}
+
+table {
+width: 100%;
+}
+
+.mat-mdc-form-field {
+font-size: 14px;
+width: 100%;
+}
+
+.card-header{
+    padding: 0.5rem 1rem !important;
+    align-items: center !important;
+}
+
+.clsnumberalignment {
+    text-align: center;
+    justify-content: flex-end;
+  }
+
